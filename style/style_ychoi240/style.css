@@ -1,0 +1,253 @@
+/* Yuk-Sing Choi */
+/*
+* Resets tall styles to nothing. Leave this in your file.
+*/
+
+html, body, div, span, article, header, footer, nav,
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/*Specific rules for navbar of each page*/ 
+
+.red #mainNav ul {
+	background: linear-gradient(to left,red,white);
+}
+
+.green #mainNav ul {
+	background: linear-gradient(to right,#009900,white);
+}
+
+.blue #mainNav ul{
+	background: linear-gradient(to left,#3366FF,white);
+}
+
+.black #mainNav ul{
+	background: linear-gradient(to right,#2f2f2f,#9f9f9f);
+}
+
+/*Rules for the mainNav*/
+
+#mainNav a {
+	font-family: arial;
+	font-weight: bold;
+}
+
+#mainNav a:link{
+	text-decoration: underline;
+}
+
+#mainNav a:visited{
+	text-decoration: none;
+}
+
+#mainNav a:hover{
+	color:white;
+}
+
+#mainNav li:nth-child(1):hover {
+	background-color: purple;
+}
+
+#mainNav li:nth-child(2):hover {
+	background-color: red;
+}
+
+#mainNav li:nth-child(3):hover {
+	background-color: green;
+}
+
+#mainNav li:nth-child(4):hover {
+	background-color: blue;
+	
+}
+
+#mainNav li:nth-child(5):hover {
+	background-color: black;
+}
+
+#mainNav li:active {
+	transform: scale(1.2) skew(-25deg);
+}
+
+#mainNav li + li {
+	border-left: 0;
+}
+
+#mainNav li {
+	display: inline-block;
+	border-left: solid 2px black;
+	border-right: solid 2px black;
+	padding-left: 1em;
+	padding-right: 1em;
+	list-style: none;
+	text-align: center;
+	margin-left: -4px;
+}
+
+#mainNav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border: solid 2px black;
+}
+
+/* Note: Each style (or series) must have a short comment. */
+
+.selected {
+	color:white;
+}
+.black .selected {
+	background-color: black;
+}
+
+.green .selected {
+	background-color: green;
+}
+
+.blue .selected{
+	background-color: blue;
+}
+
+.red .selected{
+	background-color: red;
+}
+.neutral .selected{
+	background-color: purple;
+}
+
+/* Styles for each article */
+
+article {
+	border: solid 1px black;
+	padding: 1em;
+	margin-bottom: 0.5em;
+	background: rgba(0,0,0,0.2);
+}
+
+p, h1, h2, h3, div,footer{
+	font-family: arial;
+	font-size: 10pt;
+}
+
+h1 , h2, h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Poiret One" , san serif;
+	font-weight:bold;
+}
+
+h2:first-of-type{
+	font-style: italic;
+	font-size: 18pt;
+}
+
+
+/*importing font*/
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(http://fonts.gstatic.com/s/poiretone/v4/cKr_e199f0xMkxMkRbEJXyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Styles for the colour palette */
+#colNav  li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 1em 1em 0;
+	padding: 0 2em 2em 0;
+}
+
+#colNav ul li ul li {
+	border: solid black 1px;
+}
+
+.blue #colNav li{
+	color: #A9A9F5;
+}
+
+.green #colNav li{
+	color: #CEF6CE;
+}
+
+.red #colNav li{
+	color: #8A0808;
+}
+
+/* Styles for the footer*/
+
+footer>div {
+	display:none;
+}
+
+address div {
+	display: inline-block;
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family:serif;
+}
+
+/* Styles for specific pages */
+.red {
+	background-image: url("Red-Background-13.jpg");
+	color:#990000;
+}
+
+.green{
+	background-image: url("green-wallpaper-for-desktop-background-6-washed.png");
+	color:#336600;
+}
+
+.black {
+	background-image: url("Zodiac_signs_Signs_of_the_Zodiac__a_beautiful_picture_on_a_black_background_047504_.jpg");
+	color:white;
+}
+
+.blue {
+	background-image: url("Blue-Backgrounds-86.jpg");
+	color:#08088A;
+}
+
+/*Swatch styling */
+#col_swatch {
+	margin: 5em 5em 5em 5em;
+	padding: 6em 6em 6em 6em;
+	border: black solid 1px;
+}
+
+#col_swatch:before{
+	content: "This is the swatch.";
+	position: relative;
+	left: 40%;
+	color: white;
+}
+
+.red #col_swatch{
+	background: linear-gradient(to right,red,white);
+}
+
+.green #col_swatch{
+	background: linear-gradient(to left,green,white);
+}
+
+.blue #col_swatch {
+	background: linear-gradient(to right,blue,white);
+}
+
+.black #col_swatch {
+	background: linear-gradient(to left,black,white);
+}
